@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <main style={{ padding: 24, fontFamily: 'system-ui, sans-serif' }}>
+        <main>
           {children}
         </main>
       </body>
