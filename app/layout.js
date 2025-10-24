@@ -1,11 +1,29 @@
 import './globals.css'
 
+const siteUrl = 'https://r-d-experiment.vercel.app/'
+const siteTitle = 'R-D Experiment: Pre-rendering vs Client-side Rendering Demo'
+const siteDescription = 'This experiment demonstrates the differences between pre-rendering and client-side rendering using Next.js. This website is the pre-rendered version.'
+
 export const metadata = {
-  title: 'R-D Experiment: Pre-rendering vs Client-side Rendering Demo',
-  description: 'This experiment demonstrates the differences between pre-rendering and client-side rendering using Next.js. This website is the pre-rendered version.',
+  title: siteTitle,
+  description: siteDescription,
   viewport: 'width=device-width, initial-scale=1',
   other: {
     "google-site-verification": "oEKr8HfUMuU5I5jRnd7RnUfRIzFWHknTTUBVaiYn0jQ",
+  },
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    type: 'website',
+    url: siteUrl,
+    images: [
+      {
+        url: `${siteUrl}/images/nextjs3.avif`,
+        width: 1200,
+        height: 630,
+        alt: 'R-D Experiment preview image',
+      },
+    ],
   },
 }
 
