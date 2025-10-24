@@ -1,6 +1,7 @@
 import styles from './page.module.css';
 import TickerClient from './components/TickerClient';
 import GalleryClient, { images, repeats } from './components/GalleryClient';
+import VideoPlayer from './components/VideoPlayer';
 
 export default function Home() {
     const schema = {
@@ -79,6 +80,12 @@ export default function Home() {
                         <span>Facebook</span>
                     </a>
                 </div>
+            </section>
+            <section id="videos" className={styles.gallery} aria-labelledby="videos-heading">
+                <h2 id="videos-heading" className={styles.sectionTitle}>Videos</h2>
+                <VideoPlayer src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" poster="/images/nextjs3.avif" controls />
+                <VideoPlayer src="https://media.w3.org/2010/05/bunny/trailer.mp4" poster="/images/nextjs2.avif" controls />
+                <VideoPlayer src="https://media.w3.org/2010/05/video/movie_300.mp4" poster="/images/nextjs1.avif" controls />
             </section>
             <section id="gallery" className={styles.gallery} aria-labelledby="gallery-heading">
                 <h2 id="gallery-heading" className={styles.sectionTitle}>Gallery</h2>
