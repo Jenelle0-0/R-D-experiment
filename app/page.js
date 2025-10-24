@@ -1,11 +1,11 @@
 import styles from './page.module.css';
 import TickerClient from './components/TickerClient';
-import GalleryClient from './components/GalleryClient';
+import GalleryClient, { images, repeats } from './components/GalleryClient';
 
 export default function Home() {
 
     return (
-        <><main className={styles.page}>
+    <><main id="top" className={styles.page}>
             <header className={styles.hero}>
                 <h1 className={styles.title}>
                     R&D Experiment: Pre-rendering
@@ -58,6 +58,20 @@ export default function Home() {
             </section>
             <section id="gallery" className={styles.gallery} aria-labelledby="gallery-heading">
                 <h2 id="gallery-heading" className={styles.sectionTitle}>Gallery</h2>
+                {typeof repeats === 'number' && images && (
+                    (() => {
+                        const lastR = Math.max(0, repeats - 1);
+                        const lastI = Math.max(0, images.length - 1);
+                        const lastId = `img-${lastR}-${lastI}`;
+                        return (
+                            <p>
+                                <a href={`#${lastId}`} className={styles.lastLink}>
+                                    Jump to last image
+                                </a>
+                            </p>
+                        );
+                    })()
+                )}
                 <GalleryClient />
             </section>
             <footer className={styles.footer}>
