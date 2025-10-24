@@ -33,6 +33,25 @@ export default function RootLayout({ children }) {
       <head>
         <meta charSet="utf-8" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": siteTitle,
+              "url": siteUrl,
+              "logo": `${siteUrl}images/nextjs3.avif`,
+              "sameAs": [
+                "https://github.com/Jenelle0-0",
+                "https://twitter.com/",
+                "https://www.linkedin.com/",
+                "https://www.instagram.com/",
+                "https://www.facebook.com/"
+              ]
+            })
+          }}
+        />
       </head>
       <body>
         <main>

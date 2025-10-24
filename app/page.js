@@ -34,23 +34,23 @@ export default function Home() {
             <section id="social" className={styles.social} aria-labelledby="social-heading">
                 <h2 id="social-heading" className={styles.sectionTitle}>Connect</h2>
                 <div className={styles.socialList}>
-                    <a href="https://github.com/Jenelle0-0" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/Jenelle0-0" target="_blank" rel="noopener noreferrer me">
                         <span className={styles.socialIcon} aria-hidden>🐙</span>
                         <span>GitHub</span>
                     </a>
-                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer me">
                         <span className={styles.socialIcon} aria-hidden>🐦</span>
                         <span>Twitter</span>
                     </a>
-                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer me">
                         <span className={styles.socialIcon} aria-hidden>🔗</span>
                         <span>LinkedIn</span>
                     </a>
-                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer me">
                         <span className={styles.socialIcon} aria-hidden>📸</span>
                         <span>Instagram</span>
                     </a>
-                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer me">
                         <span className={styles.socialIcon} aria-hidden>📘</span>
                         <span>Facebook</span>
                     </a>
