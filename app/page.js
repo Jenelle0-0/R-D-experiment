@@ -1,6 +1,6 @@
-"use client";
-
 import styles from './page.module.css';
+import TickerClient from './components/TickerClient';
+import GalleryClient from './components/GalleryClient';
 
 export default function Home() {
 
@@ -14,13 +14,11 @@ export default function Home() {
                 <p className={styles.lead}>
                     This is the pre-rendered version of the R&D experiment website.
                 </p>
-                <div className={styles.ticker} aria-hidden>
-                    <div className={styles.track}>Next.js • React • Web Animations • Image loading</div>
-                </div>
+                <TickerClient />
             </header><section id="showcase" className={styles.showcase}>
                 <div className={styles.card}>
-                    <h3>Realtime Gradient</h3>
-                    <p>Watch the background flow with a living gradient and floating shapes.</p>
+                    <h3>Vibrant Images</h3>
+                    <p>Experience the richness of vibrant images that captivate the senses.</p>
                 </div>
                 <div className={styles.card}>
                     <h3>Gradient Panels</h3>
@@ -33,32 +31,7 @@ export default function Home() {
             </section>
             <section id="gallery" className={styles.gallery} aria-labelledby="gallery-heading">
                 <h2 id="gallery-heading" className={styles.sectionTitle}>Gallery</h2>
-                <div className={styles.galleryGrid}>
-                    {(() => {
-                        const images = [
-                            { src: '/images/nextjs1.webp', alt: 'Next.js 1' },
-                            { src: '/images/nextjs2.webp', alt: 'Next.js 2' },
-                            { src: '/images/nextjs3.avif', alt: 'Next.js 3' },
-                            { src: '/images/nextjs4.webp', alt: 'Next.js 4' },
-                            { src: '/images/nextjs5.png', alt: 'Next.js 5' },
-                        ];
-
-                        const repeats = 100;
-                        const nodes = [];
-                        for (let r = 0; r < repeats; r++) {
-                            for (let i = 0; i < images.length; i++) {
-                                const img = images[i];
-                                const key = `img-${r}-${i}`;
-                                nodes.push(
-                                    <figure className={styles.galleryItem} key={key}>
-                                        <img src={img.src} alt={img.alt} />
-                                    </figure>
-                                );
-                            }
-                        }
-                        return nodes;
-                    })()}
-                </div>
+                <GalleryClient />
             </section>
             <footer className={styles.footer}>
                 <p>R-D Experiment · Next.js</p>
