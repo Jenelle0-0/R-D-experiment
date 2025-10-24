@@ -177,3 +177,56 @@
     color: rgba(230, 238, 248, 0.55);
     font-size: .9rem;
 }
+
+.social {
+    position: relative;
+    z-index: 2;
+    margin-top: 1.8rem;
+    width: 100%;
+    max-width: 1100px;
+    padding: 0.6rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.socialList {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialList a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.45rem 0.9rem;
+    color: rgba(230, 238, 248, 0.95);
+    text-decoration: none;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.04);
+    border-radius: 10px;
+    transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+    font-size: 0.95rem;
+}
+
+.socialList a:hover,
+.socialList a:focus {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(2,6,23,0.55);
+    background: linear-gradient(90deg, rgba(123,97,255,0.12), rgba(0,212,255,0.04));
+}
+
+.socialIcon {
+    font-size: 1.05rem;
+    line-height: 1;
+    display: inline-block;
+}
+
+.socialList a:focus-visible {
+    outline: 3px solid rgba(123,97,255,0.18);
+    outline-offset: 3px;
+}

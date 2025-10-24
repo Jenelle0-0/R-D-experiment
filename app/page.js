@@ -12,7 +12,9 @@ export default function Home() {
                     <span className={styles.accent}> — Next.js</span>
                 </h1>
                 <p className={styles.lead}>
-                    This is the pre-rendered version of the R&D experiment website.
+                    Exploring pre-rendering vs. client-side rendering — this site is pre-rendered with Next.js.
+                    HTML generated at build time for faster initial loads and better SEO. 
+                    Client-side rendering, by contrast, builds the UI in the browser using JavaScript after the initial load.
                 </p>
                 <TickerClient />
             </header><section id="showcase" className={styles.showcase}>
@@ -27,6 +29,31 @@ export default function Home() {
                 <div className={styles.card}>
                     <h3>Micro-interactions</h3>
                     <p>Buttons that pop, headings that glow.</p>
+                </div>
+            </section>
+            <section id="social" className={styles.social} aria-labelledby="social-heading">
+                <h2 id="social-heading" className={styles.sectionTitle}>Connect</h2>
+                <div className={styles.socialList}>
+                    <a href="https://github.com/Jenelle0-0" target="_blank" rel="noopener noreferrer">
+                        <span className={styles.socialIcon} aria-hidden>🐙</span>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                        <span className={styles.socialIcon} aria-hidden>🐦</span>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                        <span className={styles.socialIcon} aria-hidden>🔗</span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <span className={styles.socialIcon} aria-hidden>📸</span>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <span className={styles.socialIcon} aria-hidden>📘</span>
+                        <span>Facebook</span>
+                    </a>
                 </div>
             </section>
             <section id="gallery" className={styles.gallery} aria-labelledby="gallery-heading">
