@@ -3,9 +3,33 @@ import TickerClient from './components/TickerClient';
 import GalleryClient, { images, repeats } from './components/GalleryClient';
 
 export default function Home() {
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "R&D Experiment: Pre-rendering — Next.js",
+        "url": "https://r-d-experiment.vercel.app/",
+        "description": "Exploring pre-rendering vs. client-side rendering — this site is pre-rendered with Next.js.",
+        "author": {
+            "@type": "Person",
+            "name": "Jenelle0-0",
+            "sameAs": [
+                "https://github.com/Jenelle0-0",
+                "https://twitter.com/",
+                "https://www.linkedin.com/",
+                "https://www.instagram.com/",
+                "https://www.facebook.com/"
+            ]
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "R-D Experiment"
+        }
+    };
 
     return (
-    <><main id="top" className={styles.page}>
+    <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <main id="top" className={styles.page}>
             <header className={styles.hero}>
                 <h1 className={styles.title}>
                     R&D Experiment: Pre-rendering
