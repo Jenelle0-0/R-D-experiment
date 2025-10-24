@@ -55,10 +55,8 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        <main>
-          {children}
-          <SpeedInsights />
-        </main>
+        {children}
+        <SpeedInsights />
       </body>
     </html>
   )
