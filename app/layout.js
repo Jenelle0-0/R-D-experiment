@@ -1,4 +1,3 @@
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import './globals.css'
 
 const siteUrl = 'https://r-d-experiment.vercel.app/'
@@ -58,7 +57,6 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         {children}
-        <SpeedInsights />
       </body>
     </html>
   )
