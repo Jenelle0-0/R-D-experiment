@@ -3,6 +3,8 @@ import TickerClient from './components/TickerClient';
 import GalleryClient, { images, repeats } from './components/GalleryClient';
 import VideoPlayer from './components/VideoPlayer';
 
+export const dynamic = 'force-dynamic';
+
 export default function Home() {
     const schema = {
         "@context": "https://schema.org",
